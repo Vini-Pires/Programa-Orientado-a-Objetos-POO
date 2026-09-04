@@ -66,6 +66,7 @@ public class UTFQuestEncapsulamento {
     System.out.println();
     
     System.out.println(chefe.ficha());
+    System.out.println("Heroi esta vivo? " + heroi.estaVivo());
   }
 }
 
@@ -140,8 +141,7 @@ class Personagem {
   void pegar(Item i) {
     inventario.add(i);
     setForca(forca + i.getBonusForca());
-    System.out.println(nome + " pegou " + i.getNome()
-    + " (forca agora: " + forca + ")");
+    System.out.println(nome + " pegou " + i.getNome() + " (forca agora: " + forca + ")");
   }
 }
 
